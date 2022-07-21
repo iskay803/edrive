@@ -136,4 +136,8 @@ $(function () {
         $('.footer-subtitle').addClass('collapsed');
         $('.footer-wrapper .collapse').removeClass('show');
     }
+
+    $('.header-burger').click(function () {
+        $('.menu-wrapper').fadeToggle();
+    })
 });

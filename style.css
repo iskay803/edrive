@@ -151,6 +151,7 @@ header {
     font-size: 18px;
     color: #149a4b;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .menu-wrapper__list {

@@ -391,6 +391,10 @@ header {
     background: #1b8e4a;
 }
 
+.btn-main.long {
+    width: 225px;
+}
+
 .btn-main.large {
     height: 58px;
     width: 263px;
@@ -409,6 +413,15 @@ header {
     width: 24px;
     height: 23px;
     background: url("svg/search.svg");
+}
+
+.btn-main.grey {
+    background: #35363a;
+    transition: .3s;
+}
+
+.btn-main.grey:hover {
+    background: #171717;
 }
 
 .select-wrapper {
@@ -943,6 +956,216 @@ footer {
 }
 
 
+.modal-container {
+    min-height: 600px;
+}
+
+.edrive-modal {
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.edrive-modal .modal-dialog {
+    max-width: 585px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.edrive-modal .modal-content {
+    border: none;
+}
+
+.edrive-modal .modal-title {
+    font-size: 30px;
+    line-height: 100%;
+    color: #ffffff;
+}
+
+.edrive-modal .modal-title.address {
+    font-size: 20px;
+}
+
+.edrive-modal .modal-header {
+    min-height: 58px;
+    padding: 20px;
+}
+
+.edrive-modal .modal-header.free {
+    background: #149a4b;
+}
+
+.edrive-modal .modal-header.paid {
+    background: #345eab;
+}
+
+.edrive-modal .modal-header.login {
+    background: #35363a;
+}
+
+.edrive-modal .btn-close {
+    width: auto;
+    height: auto;
+    margin: 0 0 0 20px;
+    background: url("svg/close.svg") no-repeat;
+    border-radius: 0;
+    background-size: contain;
+    opacity: 1;
+}
+
+.edrive-modal .modal-body {
+    position: relative;
+    padding: 30px 20px;
+}
+
+.edrive-modal.wide .modal-body {
+    padding: 30px 10px;
+}
+
+.edrive-modal.map .modal-body:after {
+    position: absolute;
+    content: '';
+    top: 28px;
+    right: 10px;
+    width: 78px;
+    height: 42px;
+    background: url("img/toka.png") no-repeat;
+    background-size: contain;
+}
+
+.modal-major {
+    font-weight: 700;
+}
+
+.modal-link {
+    color: #149a4b;
+    transition: .3s;
+}
+
+.modal-link:hover {
+    color: #149a4b;
+    opacity: .7;
+}
+
+.modal-desc.status {
+    color: #149a4b;
+    font-weight: 700;
+}
+
+.modal-desc.status.yellow {
+    color: #efa300;
+    font-weight: 700;
+}
+
+.modal-desc.price {
+    color: #149a4b;
+}
+
+.modal-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-img {
+    display: flex;
+    justify-content: center;
+    width: 85px;
+    height: 72px;
+    margin-right: 10px;
+}
+
+.modal-pane {
+    position: relative;
+    padding: 16px 10px;
+    background: #f5f5f5;
+}
+
+.edrive-modal.login {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.edrive-modal.login .modal-body {
+    position: relative;
+    padding: 36px 49px 46px;
+    z-index: 1;
+}
+
+.modal-login__back {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: -84px;
+}
+
+.login-form {
+    padding: 0 32px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #333333;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #333333;
+    font-size: 16px;
+}
+
+.edrive-modal.login .modal-pane {
+    padding: 16px 23px;
+}
+
+.edrive-modal.login.register .modal-body{
+    padding-bottom: 135px;
+}
+
+.red-star {
+    position: absolute;
+    top: 17px;
+    left: 13px;
+    color: #b60303;
+}
+
+.red-text {
+    color: #b60303;
+}
+
+.form-desc {
+    font-size: 14px;
+}
+
+.modal-register__back {
+    position: absolute;
+    left: 35px;
+    bottom: 17px;
+    z-index: -1;
+}
+
+.edrive-label {
+    position: relative;
+    width: 100%;
+}
+
+.edrive-label.required:before {
+    position: absolute;
+    content: '*';
+    color: #b60303;
+    top: 29px;
+    left: -6px;
+    width: 6px;
+    height: 6px;
+}
+
+
+
 @media (max-width: 1400px) {
 
     .select-block.auto {
@@ -1321,6 +1544,32 @@ footer {
     .map-address.active {
         left: 15px;
         top: 150px;
+    }
+
+    .edrive-modal .modal-dialog {
+        max-width: 100%;
+    }
+
+    .edrive-modal .modal-body:after {
+        top: 5px;
+        right: 6px;
+    }
+
+    .modal-gallery {
+        display: block;
+    }
+
+    .edrive-modal .modal-title.address {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .edrive-modal.login .modal-body {
+        padding: 36px 10px 46px;
+    }
+
+    .login-form {
+        padding: 0 10px;
     }
 }
 
